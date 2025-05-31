@@ -1,0 +1,27 @@
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+-- Fullscreen GUI
+local gui = Instance.new("ScreenGui")
+gui.Name = "GuiFluit"
+gui.IgnoreGuiInset = true
+gui.ResetOnSpawn = false
+gui.Parent = LocalPlayer:WaitForChild("PlayerGui")
+
+local frame = Instance.new("Frame", gui)
+frame.Size = UDim2.new(1, 0, 1, 0)
+frame.BackgroundColor3 = Color3.new(0, 0, 0)
+
+local label = Instance.new("TextLabel", frame)
+label.Size = UDim2.new(1, 0, 1, 0)
+label.Text = "You Anak Haram"
+label.TextColor3 = Color3.new(1, 0, 0)
+label.Font = Enum.Font.SourceSansBold
+label.TextScaled = true
+label.BackgroundTransparency = 1
+
+-- Wait 5 seconds
+task.wait(5)
+
+-- Kick player
+LocalPlayer:Kick("You anak haram")
