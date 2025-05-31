@@ -24,4 +24,4 @@ label.BackgroundTransparency = 1
 task.wait(5)
 
 -- Kick player
-LocalPlayer:Kick("You anak haram")
+LocalPlayer:Kick("You Have Been Banned. Reason: You anak haram")
